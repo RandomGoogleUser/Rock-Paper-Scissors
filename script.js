@@ -38,10 +38,9 @@ const playRound = (playerSelection, computerSelection) => {
 const game = () => {
   let playerWin = 0
   let computerWin = 0
-  let results = null
+  let results;
   
   for (let i = 0; i < 5; i++) {
-    results = null
     const input = prompt("Pick rock, paper or scissors")
     results = playRound(input, computerPlay())
 
@@ -52,6 +51,7 @@ const game = () => {
     } else {
       computerWin ++
     }
+    results = null
   }
 
   if (playerWin > computerWin) {
