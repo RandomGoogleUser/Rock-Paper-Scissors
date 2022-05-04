@@ -55,9 +55,9 @@ const game = () => {
   }
 
   if (playerWin > computerWin) {
-    console.log("You win!")
+    console.log("\nYou win!")
   } else if (playerWin === computerWin) {
-    console.log("You tied!")
+    console.log("\nYou tied!")
   } else {
     console.log("\nYou lose!")
   }
